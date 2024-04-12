@@ -3,13 +3,16 @@ import numpy as np
 from time import sleep
 from numpy import genfromtxt
 
+#definitions
 toRad=2*np.pi/360
 toDeg=1/toRad
+
 #scene.forward=vector(-1,-1,-1)
 
-
+#import data
 my_data = genfromtxt('ori3.csv', delimiter=';')
 nr_row=(my_data.shape[0])
+
 #xarrow=arrow(lenght=2, shaftwidth=.1, color=color.red,axis=vector(1,0,0))
 #yarrow=arrow(lenght=2, shaftwidth=.1, color=color.green,axis=vector(0,1,0))
 #zarrow=arrow(lenght=4, shaftwidth=.1, color=color.blue,axis=vector(0,0,1))
@@ -18,6 +21,7 @@ nr_row=(my_data.shape[0])
 #upArrow=arrow(length=1,shaftwidth=.1,color=color.magenta,axis=vector(0,1,0))
 #sideArrow=arrow(length=2,shaftwidth=.1,color=color.orange,axis=vector(0,0,1))
 
+#desigh your gear
 distant_light(direction=vec(0, - 1, 0), color=color.magenta)
 local_light(pos=vec(- 3, 1, - 2), color=color.red)
 board=box(lenght=.9,width=.4,height=.05,color=color.white)
@@ -65,6 +69,6 @@ for i in range(nr_row-1):
   #sideArrow.length=2
   #frontArrow.length=4
   #upArrow.length=1
-  sleep(0.1) # data points 10 per second
+  sleep(0.1) # data points 10 per second 
 
   
