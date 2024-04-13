@@ -20,7 +20,7 @@ flow
 5. on your computer, convert file to .csv (if you can manage to read the matlab file with python, you can skip this step
 6. run the python script
 7. screencapture the output (browser window) I used windows built in xbox recorder (windows key + G)
-8. use your prefered video editing software to create
+8. use your preferred video editing software to create
 9. have fun :)
 
 https://www.instagram.com/reel/C5l-u13iqNA/?igsh=MXM4dXhoMDg5MXo0Nw==
