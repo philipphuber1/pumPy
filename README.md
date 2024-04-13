@@ -17,7 +17,7 @@ flow
 2. put iphone into waterproof case and mount it on a pumpfoil board. I used rubber bands and cable ties.
 3. collect pitch yaw and roll information from your pumpfoil ride.
 4. send the matlab output file to matlab cloud.
-5. on your computer, convert file to .csv (if you can manage to read the matlab file with python, you can skip this step
+5. on your computer, convert file to .csv (if you can manage to read the matlab file with python, you can skip this step)
 6. run the python script
 7. screencapture the output (browser window) I used windows built in xbox recorder (windows key + G)
 8. use your preferred video editing software to create
