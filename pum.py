@@ -21,7 +21,7 @@ nr_row=(my_data.shape[0])
 #upArrow=arrow(length=1,shaftwidth=.1,color=color.magenta,axis=vector(0,1,0))
 #sideArrow=arrow(length=2,shaftwidth=.1,color=color.orange,axis=vector(0,0,1))
 
-#desigh your gear
+#design your gear
 distant_light(direction=vec(0, - 1, 0), color=color.magenta)
 local_light(pos=vec(- 3, 1, - 2), color=color.red)
 board=box(lenght=.9,width=.4,height=.05,color=color.white)
