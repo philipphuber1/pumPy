@@ -13,14 +13,6 @@ toDeg=1/toRad
 my_data = genfromtxt('ori3.csv', delimiter=';')
 nr_row=(my_data.shape[0])
 
-#xarrow=arrow(lenght=2, shaftwidth=.1, color=color.red,axis=vector(1,0,0))
-#yarrow=arrow(lenght=2, shaftwidth=.1, color=color.green,axis=vector(0,1,0))
-#zarrow=arrow(lenght=4, shaftwidth=.1, color=color.blue,axis=vector(0,0,1))
-
-#frontArrow=arrow(length=4,shaftwidth=.1,color=color.purple,axis=vector(1,0,0))
-#upArrow=arrow(length=1,shaftwidth=.1,color=color.magenta,axis=vector(0,1,0))
-#sideArrow=arrow(length=2,shaftwidth=.1,color=color.orange,axis=vector(0,0,1))
-
 #design your gear
 distant_light(direction=vec(0, - 1, 0), color=color.magenta)
 local_light(pos=vec(- 3, 1, - 2), color=color.red)
@@ -54,21 +46,13 @@ for i in range(nr_row-1):
   roll=float(z)*toRad*(-1)
   pitch=float(y)*toRad
   yaw=float(x)*toRad+np.pi
-  #print("Roll=",roll*toDeg," Pitch=",pitch*toDeg,"Yaw=",yaw*toDeg)
-  #rate(50)
   k=vector(cos(yaw)*cos(pitch), sin(pitch),sin(yaw)*cos(pitch))
   y=vector(0,1,0)
   s=cross(k,y)
   v=cross(s,k)
   vrot=v*cos(roll)+cross(k,v)*sin(roll)
-  #frontArrow.axis=k
-  #sideArrow.axis=cross(k,vrot)
-  #upArrow.axis=vrot
   myObj.axis=k
   myObj.up=vrot
-  #sideArrow.length=2
-  #frontArrow.length=4
-  #upArrow.length=1
   sleep(0.1) # data points 10 per second 
 
   
