@@ -7,8 +7,6 @@ from numpy import genfromtxt
 toRad=2*np.pi/360
 toDeg=1/toRad
 
-#scene.forward=vector(-1,-1,-1)
-
 #import data
 my_data = genfromtxt('ori3.csv', delimiter=';')
 nr_row=(my_data.shape[0])
