@@ -2,7 +2,7 @@
 
 20240412 philipp huber
 
-pumpfoiling data collection visualisation
+pumpfoiling data collection / visualisation
 
 desc of:
 a weekend project on how to visualize a pump foil using pitch yaw and roll information
